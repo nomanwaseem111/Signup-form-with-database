@@ -46,7 +46,7 @@ app.post('/signup', (req, res) => {
         fname: body.fname,
         lname: body.lname,
         email: body.email.toLowerCase(),
-        fname: body.password,
+        password: body.password,
     })
     newUser.save((err, result) => {
 
