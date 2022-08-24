@@ -8,10 +8,10 @@ app.use(cors())
 const port = process.env.PORT || 3000
 
 const userSchema = new mongoose.Schema({
-    fname: String,
-    lname: String,
-    email: String,
-    password: String,
+    fname: {type : String},
+    lname: {type : String},
+    email: {type : String , required : true},
+    password: {type : String , required : true},
     createdOn: { type: Date, default: Date.now }
 });
 
