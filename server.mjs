@@ -10,7 +10,7 @@ const port = process.env.PORT || 3000
 const userSchema = new mongoose.Schema({
     fname: {type : String},
     lname: {type : String},
-    email: {type : String , required : true},
+    email: {type : String , lowercase: true, required : true},
     password: {type : String , required : true},
     createdOn: { type: Date, default: Date.now }
 });
