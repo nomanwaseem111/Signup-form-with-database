@@ -67,12 +67,17 @@
             const repeatpassword = document.getElementById('repeatpassword').value
 
 
+             if(password !== repeatpassword){
+             document.getElementById('result').innerHTML = "Password Do not Match"
+             return;
+              
+             }
+
             axios.post('https://signup-form-database.herokuapp.com/signup', {
                 fname,
                 lname,
                 email,
                 password,
-                repeatpassword
             })
                 .then(function (response) {
                     console.log(response.data.message);
