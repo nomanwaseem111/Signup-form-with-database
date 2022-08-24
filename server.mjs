@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000
 
 let userBase = []
 
-app.get('/signup', (req, res) => {
+app.post('/signup', (req, res) => {
 
 
     let body = req.body
