@@ -54,6 +54,7 @@ app.post('/signup', (req, res) => {
     userBase.push(userName);
 
     res.status(201).send({message : "User is Created"})
+    return
 })
 
 app.listen(port, () => {
