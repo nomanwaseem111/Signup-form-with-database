@@ -61,11 +61,11 @@
             })
                 .then(function (response) {
                     console.log(response.data.message);
-                    document.getElementById('message').innerHTML = response.data.message
+                    document.getElementById('result').innerHTML = response.data.message
                 })
                 .catch(function (error) {
                     console.log(error.response.data.message);
-                    document.getElementById('message').innerHTML = error.response.data.message
+                    document.getElementById('result').innerHTML = error.response.data.message
 
                 });
 
