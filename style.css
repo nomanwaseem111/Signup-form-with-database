@@ -83,3 +83,35 @@ i{
     margin-right: 10px;
 }
 
+@media only screen and (max-width: 360px) {
+
+    form{
+        border: 1px solid grey;
+        margin-top: 100px;
+        padding: 30px;
+        width: 300px;
+        background-color: #fff;
+        height: auto;
+    }
+
+    p{
+        font-size: 20px;
+        color:#8e8e8e;
+        font-family: 'font-family: 'Poppins', sans-serif;
+    }
+
+    a{
+        margin-top: 20px;
+        width: 100%;
+        background-color: #0095f6;
+        display: inline-block;
+        height: 40px;
+        text-decoration: none;
+        color: #fff;
+        padding-top: 7px;
+        font-size: 16px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+    
+    }
+}

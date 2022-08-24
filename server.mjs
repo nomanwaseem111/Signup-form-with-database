@@ -52,7 +52,7 @@ app.post('/signup', (req, res) => {
 
         if (!err) {
             console.log("Data Saved : ", result);
-            res.status(201).send({ message: "User is Created" })
+            res.status(201).send({ message: "User Signed up" })
         } else {
             console.log("db error : ", err);
             res.status(500).send({ message: "internal Server Error" })
