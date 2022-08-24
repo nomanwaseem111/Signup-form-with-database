@@ -7,37 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup Form with Database</title>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=DynaPuff&family=Lobster+Two&family=Macondo&family=Open+Sans:wght@500&family=Poppins:wght@500;600;700&family=Roboto:ital,wght@0,300;1,300&family=Rubik+Dirt&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <form onsubmit="signup(); return false">
+        <div class="main-heading">
+            <img src="https://www.instagram.com/static/images/web/logged_out_wordmark.png/7a252de00b20.png" alt="">
+            <p>Sign up to see photos and videos from your friends</p>
+            <a href="https://www.facebook.com/"> Log in with facebook</a>
+        </div>
+
+
         <label for=""> First Name : </label>
-        <input type="text" id="fname">
-       <br>
-       <br>
+        <input type="text" id="fname" required>
+        <br>
+        <br>
         <label for=""> Last Name : </label>
-        <input type="text" id="lname">
+        <input type="text" id="lname" required>
         <br>
         <br>
         <label for=""> Email : </label>
-        <input type="text" id="email">
+        <input type="text" id="email" required>
         <br>
         <br>
         <label for=""> Password : </label>
-        <input type="text" id="password">
+        <input type="text" id="password" required>
         <br>
         <br>
         <label for=""> Repeat Password : </label>
-        <input type="text" id="repeatpassword">
+        <input type="text" id="repeatpassword" required>
         <br>
         <br>
-        <input type="submit" value="Signup" id="btn">
+        <input type="submit" value="Sign up" id="btn">
+        <p id="result"></p>
 
     </form>
 
-    <p id="result"></p>
 
 
 
